@@ -31,7 +31,7 @@ function Home() {
             allProducts?.length > 0 ?
             allProducts?.map(product=>(
               <Col key={product?.id} sm={12} md={6} lg={4} xl={3} xxl={2}>
-              <Card className='my-5 mx-5' style={{ width: '18rem'}}>
+              <Card className='my-5 me-2' style={{ width: '18rem'}}>
             <Card.Img height={"180px"} variant="top" src={product.thumbnail} />
             <Card.Body>
               <Card.Title className='text-center' >{product?.title.slice(0,20)}...</Card.Title>
